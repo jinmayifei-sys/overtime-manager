@@ -315,7 +315,7 @@ select{appearance:none;-webkit-appearance:none;background-image:url("data:image/
       </div>
       <div class="hdr-t">
         <h1>杭聘26 · 求职工作台</h1>
-        <p id="hdr-sub">杭州 · 26届应届生</p>
+        <p id="hdr-sub">杭州 · 求职者</p>
       </div>
       <span class="ai-dot" id="ai-dot"></span>
       <button class="icon-btn" id="btn-settings" aria-label="设置">
@@ -466,7 +466,7 @@ select{appearance:none;-webkit-appearance:none;background-image:url("data:image/
           <a href="https://qinqing.hangzhou.gov.cn/" target="_blank" rel="noopener" class="tiny" style="color:#5eead4">官网 ↗</a>
         </div>
         <div>
-          <h3>26届杭州应届生补贴计算器</h3>
+          <h3>杭州求职者补贴计算器</h3>
           <p style="margin-top:4px">在杭就业缴社保后可申领生活补贴 + 租房补贴（每年1万，最长3年）</p>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
@@ -504,7 +504,7 @@ select{appearance:none;-webkit-appearance:none;background-image:url("data:image/
       <div class="card">
         <div class="card-title" style="margin-bottom:8px">自定义追问</div>
         <div class="row" style="gap:5px;margin-bottom:8px">
-          <button class="btn btn-xs btn-ghost preset-q" data-q="作为26届应届生，相比27届实习生你最大的优势是什么？">26届优势</button>
+          <button class="btn btn-xs btn-ghost preset-q" data-q="相比其他候选人，你最大的优势是什么？">个人优势</button>
           <button class="btn btn-xs btn-ghost preset-q" data-q="讲讲你简历里最有挑战性的项目，遇到最大瓶颈如何解决？">最难项目</button>
           <button class="btn btn-xs btn-ghost preset-q" data-q="入职前3个月你计划如何快速产出业务价值？">3个月规划</button>
         </div>
@@ -642,7 +642,7 @@ function defaultResume() {
     phone: '158-8888-2026',
     email: 'linhang2026@zju.edu.cn',
     school: '浙江工业大学 · 计算机科学与技术（全日制本科 · GPA 3.72/4.0）',
-    grad: '2026年6月毕业 · 26届应届生 · 杭州随时到岗',
+    grad: '2026年6月毕业 · 应届生 · 杭州随时到岗',
     skills: 'Java, SpringBoot, Python, MySQL, Redis, Linux, Docker, LangChain, RAG, Agent开发, 微服务, Git',
     intern: '2025.07-2025.12 杭州某科技独角兽 · 后端研发实习生：重构订单与履约微服务核心接口，通过 Redis 多级缓存与慢 SQL 索引优化，将高并发查询 P99 延迟从 420ms 降低至 115ms（提速 72%）。\n参与企业内部知识库 RAG 检索问答系统搭建，基于 Python 与 LangChain 实现文档分块向量化及混合检索策略，工单自动解答准确率提升至 86%。',
     projects: '高并发校园秒杀与智能推荐系统（负责人）：基于 SpringCloud Alibaba、RocketMQ 与 Redis 分布式锁实现秒杀模块，单节点压测支撑 4,500+ QPS 零超卖。\n基于大模型的智能简历解析与岗位匹配 Agent：利用 Python、FastAPI 与向量检索构建结构化简历评分引擎，支持多维度 JD 关键词对齐与自动话术生成。',
@@ -652,7 +652,7 @@ function defaultResume() {
 
 function defaultJobs() {
   return [
-    { id:'ali', company:'阿里巴巴控股集团', title:'2026届后端研发工程师 / AI应用研发', district:'余杭区', locationDetail:'余杭区·西溪园区/云谷', category:'研发与算法', channelType:'26届校招官网直投', gradWindow:'毕业 2025.11-2026.10', salary:'22-32K·16薪', salaryMax:32, urgency:95, url:'https://talent-holding.alibaba.com/campus/home?lang=zh',
+    { id:'ali', company:'阿里巴巴控股集团', title:'后端研发工程师 / AI应用研发', district:'余杭区', locationDetail:'余杭区·西溪园区/云谷', category:'研发与算法', channelType:'官网直投', gradWindow:'毕业 2025.11-2026.10', salary:'22-32K·16薪', salaryMax:32, urgency:95, url:'https://talent-holding.alibaba.com/campus/home?lang=zh',
       tags:['Java','SpringBoot','分布式','MySQL','Redis','微服务','AI应用'],
       jdSummary:'围绕大消费与AI+云战略，负责高并发分布式业务系统或智能体应用研发，需扎实掌握Java/C++/Go、数据库与缓存原理。' },
     { id:'ds', company:'DeepSeek (深度求索)', title:'全栈开发 / 算法工程师 (AI核心系统)', district:'西湖区', locationDetail:'杭州市核心区', category:'AI与大模型', channelType:'社招/校招同招', gradWindow:'应届生/青年人才', salary:'30-50K·16薪', salaryMax:50, urgency:98, url:'https://talent.deepseek.com/',
@@ -664,19 +664,19 @@ function defaultJobs() {
     { id:'fy-futong', company:'富通集团', title:'通信研发工程师 / 通信网络运维', district:'富阳区', locationDetail:'富阳区·银湖街道', category:'研发与算法', channelType:'社招急招', gradWindow:'应届生身份保留 / 社招', salary:'12-20K·14薪', salaryMax:20, urgency:88, url:'https://www.futonggroup.com.cn/',
       tags:['通信工程','网络协议','光纤光缆','Linux','Java','C语言'],
       jdSummary:'国内知名光通信企业，负责光纤光缆相关通信设备的软件研发与网络优化，或者负责大型局域网的日常运维及通信协议调试。' },
-    { id:'fy-haizheng', company:'海正药业 (富阳基地)', title:'医药数据工程师 / 自动化控制工程师', district:'富阳区', locationDetail:'富阳区·胥口镇', category:'研发与算法', channelType:'26届校招官网直投', gradWindow:'毕业 2025.11-2026.10', salary:'10-16K·14薪', salaryMax:16, urgency:85, url:'https://www.hisunpharm.com/',
+    { id:'fy-haizheng', company:'海正药业 (富阳基地)', title:'医药数据工程师 / 自动化控制工程师', district:'富阳区', locationDetail:'富阳区·胥口镇', category:'研发与算法', channelType:'官网直投', gradWindow:'毕业 2025.11-2026.10', salary:'10-16K·14薪', salaryMax:16, urgency:85, url:'https://www.hisunpharm.com/',
       tags:['数据分析','SQL','Python','PLC','自动化','制药工程'],
       jdSummary:'大型上市药企富阳生产基地，负责生产制造过程的数据采集清洗、MES系统报表开发，或者负责自动化产线的PLC控制与系统集成。' },
-    { id:'unitree', company:'宇树科技 (Unitree)', title:'嵌入式 / C++研发 / 机器人数据工程', district:'滨江区', locationDetail:'滨江区·东流路', category:'硬件与机器人', channelType:'急招补录', gradWindow:'26届校招 & 全职热招', salary:'18-35K·15薪', salaryMax:35, urgency:96, url:'https://unitree.zhiye.com/jobs',
+    { id:'unitree', company:'宇树科技 (Unitree)', title:'嵌入式 / C++研发 / 机器人数据工程', district:'滨江区', locationDetail:'滨江区·东流路', category:'硬件与机器人', channelType:'急招补录', gradWindow:'校招 & 全职热招', salary:'18-35K·15薪', salaryMax:35, urgency:96, url:'https://unitree.zhiye.com/jobs',
       tags:['C++','Linux','Python','嵌入式','机器人','数据工程','Git'],
       jdSummary:'全球四足与人形机器人领航企业，负责机器人运动控制软件、嵌入式研发或具身智能数据采集与训练管线实施。' },
-    { id:'ant', company:'蚂蚁集团 (Ant Group)', title:'全栈 / 后端研发工程师 (支付宝)', district:'西湖区', locationDetail:'西湖区·蚂蚁A空间', category:'研发与算法', channelType:'社招/校招官网直投', gradWindow:'应届补录/青年人才', salary:'22-34K·16薪', salaryMax:34, urgency:90, url:'https://talent.antgroup.com/campus/home',
+    { id:'ant', company:'蚂蚁集团 (Ant Group)', title:'全栈 / 后端研发工程师 (支付宝)', district:'西湖区', locationDetail:'西湖区·蚂蚁A空间', category:'研发与算法', channelType:'社招/官网直投', gradWindow:'应届补录/青年人才', salary:'22-34K·16薪', salaryMax:34, urgency:90, url:'https://talent.antgroup.com/campus/home',
       tags:['Java','SpringBoot','微服务','MySQL','分布式','云原生','Agent开发'],
       jdSummary:'参与支付宝亿级用户金融级交易链路、OceanBase 或蚂蚁百灵大模型应用工程研发，注重高可用架构设计。' },
-    { id:'hik', company:'海康威视 (Hikvision)', title:'软件 / 嵌入式 & AI加速算法工程师', district:'滨江区', locationDetail:'滨江区·物联网街', category:'硬件与机器人', channelType:'26届校招官网直投', gradWindow:'校招/机器人/汽车电子', salary:'17-26K·15薪', salaryMax:26, urgency:92, url:'https://campushr.hikvision.com/',
+    { id:'hik', company:'海康威视 (Hikvision)', title:'软件 / 嵌入式 & AI加速算法工程师', district:'滨江区', locationDetail:'滨江区·物联网街', category:'硬件与机器人', channelType:'官网直投', gradWindow:'校招/机器人/汽车电子', salary:'17-26K·15薪', salaryMax:26, urgency:92, url:'https://campushr.hikvision.com/',
       tags:['C++','Linux','Python','Java','嵌入式','计算机视觉','Docker'],
       jdSummary:'覆盖海康统招、海康机器人、汽车电子及存储业务，负责智能物联平台后端、边缘计算或AI算法工程化落地。' },
-    { id:'netease', company:'网易集团 (杭州研究院)', title:'服务端研发工程师 / AI产品经理', district:'滨江区', locationDetail:'滨江区·网商路599号', category:'研发与算法', channelType:'社招/校招官网直投', gradWindow:'应届校招 & 专项补录', salary:'20-30K·16薪', salaryMax:30, urgency:89, url:'https://campus.163.com/',
+    { id:'netease', company:'网易集团 (杭州研究院)', title:'服务端研发工程师 / AI产品经理', district:'滨江区', locationDetail:'滨江区·网商路599号', category:'研发与算法', channelType:'社招/官网直投', gradWindow:'应届校招 & 专项补录', salary:'20-30K·16薪', salaryMax:30, urgency:89, url:'https://campus.163.com/',
       tags:['Java','Python','Redis','MySQL','微服务','Linux','AIGC'],
       jdSummary:'负责云音乐、严选、有道或雷火游戏高并发服务端架构研发与AIGC工具链落地，工程师文化极佳。' },
     { id:'kujiale', company:'群核科技 (酷家乐)', title:'空间智能研发 / AIGC产品经理', district:'西湖区', locationDetail:'西湖·矩阵国际', category:'AI与大模型', channelType:'社招/校招同招', gradWindow:'杭州六小龙独角兽直投', salary:'18-30K·15薪', salaryMax:30, urgency:94, url:'https://www.kujiale.com/pub/hr-recruit/campus/postlist',
@@ -685,7 +685,7 @@ function defaultJobs() {
     { id:'tencent', company:'腾讯 (杭州研发中心)', title:'Agent开发工程师 / AI应用工程师', district:'滨江区', locationDetail:'滨江区·腾讯杭州分部', category:'AI与大模型', channelType:'社招/校招通道', gradWindow:'应届生/社招均可', salary:'24-36K·16薪', salaryMax:36, urgency:91, url:'https://join.qq.com/post.html?pid=2',
       tags:['Python','LangChain','RAG','Agent开发','Java','Linux','Docker'],
       jdSummary:'负责腾讯云与智慧产业(CSIG)大模型智能体框架研发、企业级知识库RAG检索优化及高可用Agent服务部署。' },
-    { id:'taotian', company:'阿里巴巴 / 淘天集团', title:'26届AI产品经理 / 电商用户运营', district:'余杭区', locationDetail:'余杭区·西溪园区', category:'产品与运营', channelType:'26届校招官网直投', gradWindow:'毕业 2025.11-2026.10', salary:'18-28K·16薪', salaryMax:28, urgency:85, url:'https://talent.alibaba.com/',
+    { id:'taotian', company:'阿里巴巴 / 淘天集团', title:'AI产品经理 / 电商用户运营', district:'余杭区', locationDetail:'余杭区·西溪园区', category:'产品与运营', channelType:'官网直投', gradWindow:'毕业 2025.11-2026.10', salary:'18-28K·16薪', salaryMax:28, urgency:85, url:'https://talent.alibaba.com/',
       tags:['产品设计','数据分析','SQL','AIGC','Agent开发','用户增长'],
       jdSummary:'负责淘宝天猫AI导购助手、商家AIGC创意工具或核心垂类行业运营，要求敏锐的数据洞察力与AI工具实操能力。' }
   ];
@@ -727,7 +727,7 @@ function load() {
   S.resume = normalizeResume(p.resume || defaultResume());
   S.queue = Array.isArray(p.queue) ? p.queue : ['ali', 'ds', 'fy-dahua'];
   S.apps = Array.isArray(p.apps) ? p.apps : [
-    { jobId:'ds', company:'DeepSeek (深度求索)', title:'全栈开发 / 算法工程师', district:'西湖区', salary:'30-50K·16薪', status:'面试推进中', appliedAt:'2026-10-21 10:15', url:'https://talent.deepseek.com/', pitch:'您好！我是2026届应届生林杭，熟悉 Python、LangChain、RAG 与分布式推理，向往 DeepSeek 探索AGI的技术氛围，可随时在杭州到岗！' },
+    { jobId:'ds', company:'DeepSeek (深度求索)', title:'全栈开发 / 算法工程师', district:'西湖区', salary:'30-50K·16薪', status:'面试推进中', appliedAt:'2026-10-21 10:15', url:'https://talent.deepseek.com/', pitch:'您好！我是求职者林杭，熟悉 Python、LangChain、RAG 与分布式推理，向往 DeepSeek 探索AGI的技术氛围，可随时在杭州到岗！' },
     { jobId:'fy-dahua', company:'大华股份 (富阳银湖基地)', title:'嵌入式开发 / C++软件工程师', district:'富阳区', salary:'16-28K·15薪', status:'已投递/初筛中', appliedAt:'2026-10-22 09:00', url:'https://dahua.zhiye.com/campus', pitch:'您好！我熟练掌握 C++ 与 Linux，有丰富的底层开发和网络协议经验，非常期望加入大华富阳银湖基地团队。' }
   ];
   S.search = p.search || '';
@@ -751,7 +751,7 @@ function matchScore(job) {
 function makePitchLocal(job) {
   const { hit } = matchScore(job);
   const skills = hit.length ? hit.slice(0, 4).join('、') : (S.resume.skills.split(',')[0] || '相关技术栈');
-  return `您好！我对贵司【${job.company}】在杭州${job.district}招聘的「${job.title}」岗位非常感兴趣。我是2026届毕业生，熟练掌握 ${skills} 等核心技能。在此前实习与项目中，曾主导高并发微服务重构及企业级 RAG 大模型检索系统落地。非常认可${job.company}的技术氛围，随信附上简历，期待参与笔面试交流！`;
+  return `您好！我对贵司【${job.company}】在杭州${job.district}招聘的「${job.title}」岗位非常感兴趣。我是求职者，熟练掌握 ${skills} 等核心技能。在此前实习与项目中，曾主导高并发微服务重构及企业级 RAG 大模型检索系统落地。非常认可${job.company}的技术氛围，随信附上简历，期待参与笔面试交流！`;
 }
 
 const COMPANY_BULLET_RE = /^\[针对.+?定制亮点\][\s\S]*?(?=\n|$)/gm;
@@ -783,7 +783,7 @@ function buildInterviewLocal(job) {
   const skills = hit.length ? hit.join('、') : S.resume.skills;
   const firstIntern = (S.resume.intern || '').split('\n')[0] || '在过往实习中负责核心业务模块研发与性能优化';
   const firstProj = (S.resume.projects || '').split('\n')[0] || '独立负责高并发微服务与智能体系统设计';
-  const school = (S.resume.school || '2026届高校计算机相关专业').split('·')[0].trim();
+  const school = (S.resume.school || '高校计算机相关专业').split('·')[0].trim();
 
   const isAI = job.category === 'AI与大模型' || (job.tags || []).some(t => /AI|大模型|RAG|Agent/i.test(t));
   const isHW = job.category === '硬件与机器人' || (job.tags || []).some(t => /C\+\+|嵌入式|机器人/i.test(t));
@@ -812,7 +812,7 @@ function buildInterviewLocal(job) {
       tag: '必考题 1 · 1分钟自我介绍',
       question: `请做 1 分钟自我介绍，并说说为什么投递我们【${job.company}】的「${job.title}」岗位？`,
       intent: '考察点：第一印象、表达逻辑、到岗稳定性、对公司的了解程度。',
-      answer: `面试官您好！我是 ${S.resume.name}，毕业于 ${school}，2026 届毕业生，目前人在杭州，可随时全职到岗。\n\n技术上我熟练掌握 ${skills}，与岗位要求的【${(job.tags||[]).slice(0,4).join('、')}】高度契合（匹配度 ${score}%）。\n\n实战上，${firstIntern}\n\n项目上，${firstProj}\n\n我一直关注【${job.company}】在杭州的发展。作为具备实战经验的毕业生，我不需要漫长适应期，入职即可快速投入团队研发，非常期待加入！`
+      answer: `面试官您好！我是 ${S.resume.name}，毕业于 ${school}，目前人在杭州，可随时全职到岗。\n\n技术上我熟练掌握 ${skills}，与岗位要求的【${(job.tags||[]).slice(0,4).join('、')}】高度契合（匹配度 ${score}%）。\n\n实战上，${firstIntern}\n\n项目上，${firstProj}\n\n我一直关注【${job.company}】在杭州的发展。作为具备实战经验的求职者，我不需要漫长适应期，入职即可快速投入团队研发，非常期待加入！`
     },
     { tag: '必考题 2 · 业务技术深挖', question: q2, intent: i2, answer: a2 },
     {
@@ -897,7 +897,7 @@ const AI = {
 };
 
 function renderHeaderSub() {
-  const short = (S.resume.school || '').split('·')[0].trim() || '2026届应届生';
+  const short = (S.resume.school || '').split('·')[0].trim() || '求职者';
   $('#hdr-sub').textContent = `${S.resume.name} · ${short}`;
   const dot = $('#ai-dot');
   dot.classList.toggle('on', AI.ready());
@@ -1731,4 +1731,41 @@ function bindEvents() {
     } else if (btn.dataset.act === 'copy-qa') {
       const idx = parseInt(btn.dataset.idx, 10);
       const qa = window.__currentQA?.[idx];
-      if (qa) copyText(`Q：${qa.question}\n\nA：${qa.answer}`, '已复制该
+      if (qa) copyText(`Q：${qa.question}\n\nA：${qa.answer}`, '已复制该题问答');
+    }
+  });
+}
+
+function init() {
+  load();
+  switchTab(S.tab || 'jobs');
+  if (S.district !== 'ALL') {
+    const c = $(`#chips-district [data-d="${S.district}"]`);
+    if (c) { $$('#chips-district .chip').forEach(x => x.classList.remove('active')); c.classList.add('active'); }
+  }
+  if (S.category !== 'ALL') {
+    const c = $(`#chips-category [data-c="${S.category}"]`);
+    if (c) { $$('#chips-category .chip').forEach(x => x.classList.remove('active')); c.classList.add('active'); }
+  }
+  $('#job-search').value = S.search || '';
+  $('#job-sort').value = S.sort;
+  renderHeaderSub(); renderBadges(); renderJobs(); renderQueue();
+  renderResume(); renderATS(); renderTracker(); renderSubsidy();
+  $('#ats-job-select').innerHTML = S.jobs.map(j =>
+    `<option value="${esc(j.id)}">${esc(j.company)} · ${esc(j.title.slice(0, 18))}</option>`
+  ).join('');
+  bindEvents();
+  initPWA();
+  if (!localStorage.getItem(STORE)) {
+    setTimeout(() => toast('👋 欢迎使用！点右上角 ⚙️ 可配置 DeepSeek API，或直接使用离线模式', 'info', 4500), 800);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+</script>
+</body>
+</html>
